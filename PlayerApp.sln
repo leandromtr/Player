@@ -3,21 +3,31 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.30011.22
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PlayerApp.Domain", "PlayerApp.Domain\PlayerApp.Domain.csproj", "{2EB06476-7C48-44B8-8940-E6FE8666FDA4}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PlayerApp.Domain", "PlayerApp.Domain\PlayerApp.Domain.csproj", "{2EB06476-7C48-44B8-8940-E6FE8666FDA4}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PlayerApp.Domain.Core", "PlayerApp.Domain.Core\PlayerApp.Domain.Core.csproj", "{4FF4F053-B2DE-4A73-8C49-DFCCC315A793}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PlayerApp.Domain.Core", "PlayerApp.Domain.Core\PlayerApp.Domain.Core.csproj", "{4FF4F053-B2DE-4A73-8C49-DFCCC315A793}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PlayerApp.Application", "PlayerApp.Application\PlayerApp.Application.csproj", "{A597597D-8251-4F40-ACD1-A18AA2279D12}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PlayerApp.Application", "PlayerApp.Application\PlayerApp.Application.csproj", "{A597597D-8251-4F40-ACD1-A18AA2279D12}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PlayerApp.Infra.Bus", "PlayerApp.Infra.Bus\PlayerApp.Infra.Bus.csproj", "{E10F020A-9929-4610-9ADB-E71BC72C5AB3}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PlayerApp.Infra.Bus", "PlayerApp.Infra.Bus\PlayerApp.Infra.Bus.csproj", "{E10F020A-9929-4610-9ADB-E71BC72C5AB3}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PlayerApp.Infra.Data", "PlayerApp.Infra.Data\PlayerApp.Infra.Data.csproj", "{AD1443C2-A951-48E5-8D15-7911A2B4F39A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PlayerApp.Infra.Data", "PlayerApp.Infra.Data\PlayerApp.Infra.Data.csproj", "{AD1443C2-A951-48E5-8D15-7911A2B4F39A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PlayerApp.Infra.IoC", "PlayerApp.Infra.IoC\PlayerApp.Infra.IoC.csproj", "{014DEDAA-F54F-4D02-B3B1-D88D23F37454}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PlayerApp.Infra.IoC", "PlayerApp.Infra.IoC\PlayerApp.Infra.IoC.csproj", "{014DEDAA-F54F-4D02-B3B1-D88D23F37454}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Presentation", "Presentation\Presentation.csproj", "{DD22DE71-66DE-4279-A523-FFC0B5E79402}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PlayerApp.Presentation", "PlayerApp.Presentation\PlayerApp.Presentation.csproj", "{DD22DE71-66DE-4279-A523-FFC0B5E79402}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Api", "Api\Api.csproj", "{8A1872F4-0F56-472F-8EDD-25C4C43628B5}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PlayerApp.Api", "PlayerApp.Api\PlayerApp.Api.csproj", "{8A1872F4-0F56-472F-8EDD-25C4C43628B5}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "API", "API", "{7DD8B194-9226-403A-A696-8A3E41AE90D0}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Application", "Application", "{444E1347-B5AF-45E5-B80F-E57024344B7E}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Domain", "Domain", "{7A92987D-A3AA-44DD-A48E-C815ED1B2A34}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Infra", "Infra", "{FD8151A2-4FF9-45A7-9C70-712A4B6BB912}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Presentation", "Presentation", "{54B92B33-4542-4655-BED8-23E4322D2DE2}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -60,6 +70,16 @@ Global
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{2EB06476-7C48-44B8-8940-E6FE8666FDA4} = {7A92987D-A3AA-44DD-A48E-C815ED1B2A34}
+		{4FF4F053-B2DE-4A73-8C49-DFCCC315A793} = {7A92987D-A3AA-44DD-A48E-C815ED1B2A34}
+		{A597597D-8251-4F40-ACD1-A18AA2279D12} = {444E1347-B5AF-45E5-B80F-E57024344B7E}
+		{E10F020A-9929-4610-9ADB-E71BC72C5AB3} = {FD8151A2-4FF9-45A7-9C70-712A4B6BB912}
+		{AD1443C2-A951-48E5-8D15-7911A2B4F39A} = {FD8151A2-4FF9-45A7-9C70-712A4B6BB912}
+		{014DEDAA-F54F-4D02-B3B1-D88D23F37454} = {FD8151A2-4FF9-45A7-9C70-712A4B6BB912}
+		{DD22DE71-66DE-4279-A523-FFC0B5E79402} = {54B92B33-4542-4655-BED8-23E4322D2DE2}
+		{8A1872F4-0F56-472F-8EDD-25C4C43628B5} = {7DD8B194-9226-403A-A696-8A3E41AE90D0}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {4C730EB4-7464-4329-93AB-40B6F69699AF}
